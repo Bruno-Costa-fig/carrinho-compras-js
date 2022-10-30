@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+  <link rel="stylesheet" href="style.css">
+  <title>Carrinho de Compras</title>
+</head>
+
+<body>
+  <div class="container">
+    <div id="carrinho-container">
+      <div class="form">
+        <label>
+          Novo item
+          <input type="text" id="input-item" />
+          <button id="btn-adicionar">adicionar item</button>
+        </label>
+      </div>
+      
+      <div class="lista-produtos">
+        <h2>Lista de produtos</h2>
+        <ul id="lista-items"></ul>
+      </div>
+      <div class="card">
+        <h2>Carrinho de compras</h2>
+        <ul id="carrinho-items"></ul>
+        <button id="btn-fechar-pedido">fechar pedido</button>
+      </div>
+    </div>
+    
+    <div id="pedido-container" class="hidden">
+      <i class='bx bx-check-circle'></i>
+      <h1>Pedido finalizado com sucesso</h2>
+        <div class="lista">
+          <h2>Produtos pedidos</h2>
+          <ul id="lista-pedido"></ul>
+          <button id="btn-novo-pedido">fazer novo pedido</button>
+        </div>
+    </div>
+  </div>
+  <script src="regra-carrinho.js"></script>
+</body>
+</html>
